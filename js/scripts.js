@@ -1,10 +1,12 @@
 var result = [];
-var add = "";
-var numerals =
+
 var convert = function(data)
 {
-
-  return result;
+  result = [];
+  for(var i = 1; i <= data; i ++)
+  {
+    result.push(i);
+  }
 }
 
 $(document).ready(function() {
