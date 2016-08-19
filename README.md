@@ -17,17 +17,25 @@ This software is licensed under a MIT license.
 
 ##Specifications
 * It can count up to a provided number
+
 Example Input: 3
+
 Example Output: [1,2,3]
 
 * It changes numbers divisible by 3 into ping
+
 Example Input: 3
+
 Example Output: [1,2,ping]
 
 * It changes numbers divisible by 5 into pong
+
 Example Input: 3
+
 Example Output: [1,2,ping,4,pong]
 
 * It changes numbers divisible by 15 into ping-pong
+
 Example Input: 3
+
 Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]
