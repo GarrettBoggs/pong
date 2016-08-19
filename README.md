@@ -40,12 +40,32 @@ Example Input: 3
 
 Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]
 
-* It alerts when non positive number is entered
-
-Example Input: birds
-
-Example Output: alert: Enter a number greater than 0!
+* It alerts when non positive number is not entered
 
 Example Input: - 15
 
 Example Output: alert: Enter a number greater than 0!
+
+* It outputs a string
+
+Example Input: bird
+
+Example Output: [b,i,r,d]
+
+* It recognizes vowels
+
+Example Input: bird
+
+Example Output: [b,i -- Vowel alert!,r,d]
+
+* It recognizes vowels
+
+Example Input: bird
+
+Example Output: [b,i -- Vowel alert!,r,d]
+
+* It makes a special case for y
+
+Example Input: birdy
+
+Example Output: [b,i -- Vowel alert!,r,d, y -- y is sort of a vowel]

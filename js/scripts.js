@@ -40,15 +40,15 @@ var convertString = function(str)
   {
     for(var j = 0; j < someVowels.length; j ++)
     {
-      if(str[i] === someVowels[j])
+      if(str[i].toLowerCase() === someVowels[j])
       {
         myResult.push(str[i] + " -- Vowel alert!");
         vowelCounter = 1;
       }
     }
-    if((vowelCounter === 0) && (str[i] === "y"))
+    if((vowelCounter === 0) && (str[i].toLowerCase() === "y"))
     {
-      myResult.push(str[i] + " -- y is sort of a vowel?");
+      myResult.push(str[i] + " -- y is sort of a vowel");
     }
     else if(vowelCounter === 0)
     {
