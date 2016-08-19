@@ -5,6 +5,18 @@ var convert = function(data)
   result = [];
   for(var i = 1; i <= data; i ++)
   {
+    if(i % 15 === 0)
+    {
+      result.push("ping-pong");
+    }
+    else if(i % 5 === 0)
+    {
+      result.push("pong");
+    }
+    else if(i % 3 === 0)
+    {
+      result.push("ping");
+    }
     result.push(i);
   }
 }
