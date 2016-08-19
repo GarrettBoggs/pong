@@ -21,10 +21,20 @@ h4{
   margin-left: 20px;
 }
 
-#green{
-  height: 100vh;
-  width: auto;
-  background-color: #446600;
+button{
+  float: left;
+  margin-left: 20px;
+}
+
+.left{
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+.form-control{
+  width: 250px;
+  float: left;
 }
 
 .tan{
@@ -35,4 +45,14 @@ h4{
 .white{
   color: white;
   margin-bottom: 20px;
+}
+
+#green{
+  height: 100vh;
+  width: auto;
+  background-color: #40bf40;
+}
+
+#output{
+  margin-top: 50px;
 }
