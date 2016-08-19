@@ -1,5 +1,5 @@
-var result = [];
-
+var myResult = [];
+//business logic
 var convert = function(data)
 {
   result = [];
@@ -7,27 +7,31 @@ var convert = function(data)
   {
     if(i % 15 === 0)
     {
-      result.push("ping-pong");
+      myResult.push("ping-pong");
     }
     else if(i % 5 === 0)
     {
-      result.push("pong");
+      myResult.push("pong");
     }
     else if(i % 3 === 0)
     {
-      result.push("ping");
+      myResult.push("ping");
     }
-    result.push(i);
+    else
+    {
+      myResult.push(i);
+    }
+
   }
 }
-
+//user-interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     var data = parseInt($("#number").val());
     console.log(data);
     convert(data);
-    console.log(result);
-    $("#output").text(result);
+    console.log(myResult);
+    $("#output").text(myResult);
   });
 });
