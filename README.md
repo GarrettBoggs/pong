@@ -18,48 +18,48 @@ This software is licensed under a MIT license.
 ##Specifications
 * It can count up to a provided number
 
-*Example Input:* 3
+**Example Input:** 3
 
-*Example Output:* [1,2,3]
+**Example Output:** [1,2,3]
 
 * It changes numbers divisible by 3 into ping
 
-*Example Input:* 3
+**Example Input:** 3
 
-*Example Output:* [1,2,ping]
+**Example Output:** [1,2,ping]
 
 * It changes numbers divisible by 5 into pong
 
-*Example Input:* 15
+**Example Input:** 5
 
-*Example Output:* [1,2,ping,4,pong]
+**Example Output:** [1,2,ping,4,pong]
 
 * It changes numbers divisible by 15 into ping-pong
 
-*Example Input:* 3
+**Example Input:** 15
 
-*Example Output:* [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]
+**Example Output:** [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]
 
 * It alerts when a negative number is
 
-*Example Input:* - 15
+**Example Input:** - 15
 
-Example Output: alert: Enter a number greater than 0!
+**Example Output:** alert: Enter a number greater than 0!
 
 * It outputs a string
 
-*Example Input:* bird
+**Example Input:** bird
 
-*Example Output:* [b,i,r,d]
+**Example Output:** [b,i,r,d]
 
 * It recognizes vowels
 
-*Example Input:* bird
+**Example Input:** bird
 
-*Example Output:* [b,i -- Vowel alert!,r,d]
+**Example Output:** [b,i -- Vowel alert!,r,d]
 
 * It makes a special case for y
 
-*Example Input:* birdy
+**Example Input:** birdy
 
-*Example Output:* [b,i -- Vowel alert!,r,d, y -- y is sort of a vowel]
+**Example Output:** [b,i -- Vowel alert!,r,d, y -- y is sort of a vowel]

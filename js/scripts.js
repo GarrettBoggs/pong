@@ -58,13 +58,25 @@ var convertString = function(str)
   }
 }
 
+var intCheck = function(inputData)
+{
+  if(!inputData)
+  {
+    inputData = $("#number").val();
+    convertString(inputData);
+  }
+  else
+  {
+    convertInt(inputData);
+  }
+}
+
 var displayData = function(myResult)
 {
   $(".kill").remove();
   for(var i = 0; i < myResult.length ; i ++)
   {
     $("#output").append('<div class="kill"><li>' + myResult[i] + '</div></li>');
-    event.preventDefault();
   }
 }
 
@@ -73,16 +85,7 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     var inputData = parseInt($("#number").val());
 
-    if(!inputData){
-      inputData = $("#number").val();
-      console.log(inputData);
-      convertString(inputData);
-    }
-    else{
-      convertInt(inputData);
-    }
-
-    console.log(myResult);
+    intCheck(inputData);
     displayData(myResult);
 
     event.preventDefault();
