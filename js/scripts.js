@@ -1,9 +1,11 @@
 var myResult = [];
+var someVowels = ["a","e","i","o","u"];
+var vowelCounter = 0;
 //business logic
-var convert = function(data)
+var convertInt = function(data)
 {
   myResult = [];
-  if((data < 1) || !(data))
+  if(data < 1)
   {
     alert("Enter a number greater than 0!")
   }
@@ -31,6 +33,31 @@ var convert = function(data)
   }
 }
 
+var convertString = function(str)
+{
+  myResult = [];
+  for(var i = 0; i < str.length; i ++)
+  {
+    for(var j = 0; j < someVowels.length; j ++)
+    {
+      if(str[i] === someVowels[j])
+      {
+        myResult.push(str[i] + " -- Vowel alert!");
+        vowelCounter = 1;
+      }
+    }
+    if((vowelCounter === 0) && (str[i] === "y"))
+    {
+      myResult.push(str[i] + " -- y is sort of a vowel?");
+    }
+    else if(vowelCounter === 0)
+    {
+      myResult.push(str[i]);
+    }
+    vowelCounter = 0;
+  }
+}
+
 var displayData = function(myResult)
 {
   $(".kill").remove();
@@ -46,8 +73,15 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     var inputData = parseInt($("#number").val());
 
-    console.log(inputData);
-    convert(inputData);
+    if(!inputData){
+      inputData = $("#number").val();
+      console.log(inputData);
+      convertString(inputData);
+    }
+    else{
+      convertInt(inputData);
+    }
+
     console.log(myResult);
     displayData(myResult);
 

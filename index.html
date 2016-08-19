@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <h1>Ping-Pong</h1>
+    <h1>Ping-Pong <img src="img/pong.png"> </h1>
   <!-- <div class = "container"> -->
       <div class="row">
         <div class="col-md-3">
@@ -25,19 +25,25 @@
         </div>
         <div class="col-md-9">
           <h2>Let's Play!</h2>
-          <h3>Rules: </h3>
+          <h3>Rules: If you enter a number greater than 0 </h3>
           <p> Ping-Pong will count your number from 1 with the following exceptions </p>
           <ol>
             <li> Numbers divisble by 3 become "ping" </li>
             <li> Numbers divisble by 5 become "ping" </li>
             <li> Numbers divisble by 15 become "ping-pong" </li>
           </ol>
+          <h3>Rules: If you enter a word </h3>
+          <p> If you enter a word, it will output that word in an unordered list</p>
+          <ol>
+            <li> It will alert at a vowel </li>
+            <li> It will have a custom alert for y </li>
+          </ol>
           <form>
             <div class="form-group">
                <label class="left" for="number">Enter your number here:</label>
                <input id="number" class="form-control" type="text">
             </div>
-             <button type="submit" class="btn">Ping-pong!</button>
+             <button type="submit" class="btn">Ping-Pong!</button>
           </form>
           <ul id="output">
           </ul>
