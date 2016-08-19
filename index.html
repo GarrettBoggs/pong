@@ -9,18 +9,40 @@
   </head>
 
   <body>
-    <div class = "container">
-      <h1>Let's Play!</h1>
-      <h2>Rules: </h2>
-      <form>
-        <div class="form-group">
-           <label for="number">Enter a number</label>
-           <input id="number" class="form-control" type="text">
+    <h1>Ping-Pong</h1>
+  <!-- <div class = "container"> -->
+      <div class="row">
+        <div class="col-md-3">
+          <div id="green">
+            <h2> About Ping-Pong </h2>
+            <h3 class="tan"> Created by: </h3>
+            <h4 class="white"> Garrett Boggs </h4>
+            <h3 class="tan"> GitHub Username/URL </h3>
+            <h4 class="white"> garrettboggs </h4>
+            <h3 class="tan"> Level Three Test For:</h3>
+            <h4 class="white"> Intro </h4>
+          </div>
         </div>
-         <button type="submit" class="btn">Result!</button>
-      </form>
-      <ul id="output">
-      </ul>
-    </div>
+        <div class="col-md-9">
+          <h2>Let's Play!</h2>
+          <h3>Rules: </h3>
+          <p> Ping-Pong will count your number from 1 with the following exceptions </p>
+          <ol>
+            <li> Numbers divisble by 3 become "ping" </li>
+            <li> Numbers divisble by 5 become "ping" </li>
+            <li> Numbers divisble by 15 become "ping-pong" </li>
+          </ol>
+          <form>
+            <div class="form-group">
+               <label for="number">Enter a number</label>
+               <input id="number" class="form-control" type="text">
+            </div>
+             <button type="submit" class="btn">Ping-pong!</button>
+          </form>
+          <ul id="output">
+          </ul>
+        </div>
+      </div>
+    <!-- </div> -->
   </body>
 </html>

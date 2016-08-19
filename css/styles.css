@@ -1,0 +1,38 @@
+body{
+  background-color: lightgray;
+}
+
+h1{
+  text-align: center;
+  background-color: #ffe6b3;
+  padding: 50px;
+  margin-top: 0px;
+}
+
+h2{
+  margin-left: 20px;
+}
+
+h3{
+  margin-left: 20px;
+}
+
+h4{
+  margin-left: 20px;
+}
+
+#green{
+  height: 100vh;
+  width: auto;
+  background-color: #446600;
+}
+
+.tan{
+  color: #ffe6b3;
+  margin-bottom: 20px;
+}
+
+.white{
+  color: white;
+  margin-bottom: 20px;
+}

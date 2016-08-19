@@ -3,23 +3,30 @@ var myResult = [];
 var convert = function(data)
 {
   myResult = [];
-  for(var i = 1; i <= data; i ++)
+  if((data < 1) || !(data))
   {
-    if(i % 15 === 0)
+    alert("Enter a number greater than 0!")
+  }
+  else
+  {
+    for(var i = 1; i <= data; i ++)
     {
-      myResult.push("ping-pong");
-    }
-    else if(i % 5 === 0)
-    {
-      myResult.push("pong");
-    }
-    else if(i % 3 === 0)
-    {
-      myResult.push("ping");
-    }
-    else
-    {
-      myResult.push(i);
+      if(i % 15 === 0)
+      {
+        myResult.push("ping-pong");
+      }
+      else if(i % 5 === 0)
+      {
+        myResult.push("pong");
+      }
+      else if(i % 3 === 0)
+      {
+        myResult.push("ping");
+      }
+      else
+      {
+        myResult.push(i);
+      }
     }
   }
 }
@@ -29,7 +36,7 @@ var displayData = function(myResult)
   $(".kill").remove();
   for(var i = 0; i < myResult.length ; i ++)
   {
-    $("#output").append('<div class="kill"><li>' + myResult[i] + '</div></li>'); 
+    $("#output").append('<div class="kill"><li>' + myResult[i] + '</div></li>');
     event.preventDefault();
   }
 }
@@ -37,10 +44,10 @@ var displayData = function(myResult)
 //user-interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
-    var data = parseInt($("#number").val());
+    var inputData = parseInt($("#number").val());
 
-    console.log(data);
-    convert(data);
+    console.log(inputData);
+    convert(inputData);
     console.log(myResult);
     displayData(myResult);
 
