@@ -40,13 +40,13 @@ This software is licensed under a MIT license.
 
 **Example Output:** [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]
 
-* It alerts when a negative number is
+* It alerts when a negative number is entered
 
 **Example Input:** - 15
 
 **Example Output:** alert: Enter a number greater than 0!
 
-* It outputs a string
+* It can output a string
 
 **Example Input:** bird
 
@@ -63,3 +63,9 @@ This software is licensed under a MIT license.
 **Example Input:** birdy
 
 **Example Output:** [b,i -- Vowel alert!,r,d, y -- y is sort of a vowel]
+
+* It will recognize capital letters
+
+**Example Input:** bIrdY
+
+**Example Output:** [b,I -- Vowel alert!,r,d, Y -- y is sort of a vowel]

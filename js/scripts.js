@@ -2,16 +2,16 @@ var myResult = [];
 var someVowels = ["a","e","i","o","u"];
 var vowelCounter = 0;
 //business logic
-var convertInt = function(data)
+var convertInt = function(int)
 {
   myResult = [];
-  if(data < 1)
+  if(int < 1)
   {
     alert("Enter a number greater than 0!")
   }
   else
   {
-    for(var i = 1; i <= data; i ++)
+    for(var i = 1; i <= int; i ++)
     {
       if(i % 15 === 0)
       {
