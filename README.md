@@ -9,7 +9,7 @@ This site uses arrays and looping to count from one to a specified number. Creat
 ##Setup instruction
 
 Have connection to the internet and capabilities to open a webpage
-Open via the ghpages at: [here](https://garrettboggs.github.io/pong])
+Open via the ghpages at: [https://garrettboggs.github.io/pong](https://garrettboggs.github.io/pong)
 
 Copyright (c) 2016 *Garrett Boggs*
 
