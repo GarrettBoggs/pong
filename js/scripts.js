@@ -1,7 +1,8 @@
+//business logic
 var myResult = [];
 var someVowels = ["a","e","i","o","u"];
 var vowelCounter = 0;
-//business logic
+
 var convertInt = function(int)
 {
   myResult = [];
@@ -58,35 +59,26 @@ var convertString = function(str)
   }
 }
 
-var intCheck = function(inputData)
-{
-  if(!inputData)
-  {
-    inputData = $("#number").val();
-    convertString(inputData);
-  }
-  else
-  {
-    convertInt(inputData);
-  }
-}
-
-var displayData = function(myResult)
-{
-  $(".kill").remove();
-  for(var i = 0; i < myResult.length ; i ++)
-  {
-    $("#output").append('<div class="kill"><li>' + myResult[i] + '</div></li>');
-  }
-}
-
 //user-interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     var inputData = parseInt($("#number").val());
 
-    intCheck(inputData);
-    displayData(myResult);
+    if(!inputData)
+    {
+      inputData = $("#number").val();
+      convertString(inputData);
+    }
+    else
+    {
+      convertInt(inputData);
+    }
+
+    $(".kill").remove();
+    for(var i = 0; i < myResult.length ; i ++)
+    {
+      $("#output").append('<div class="kill"><li>' + myResult[i] + '</div></li>');
+    }
 
     event.preventDefault();
   });
